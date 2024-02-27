@@ -24,7 +24,7 @@ export class InputAddItemComponent {
 
   @ViewChild('inputText') public inputText!: ElementRef;
 
-  @Output() public outputListItems = new EventEmitter<IListItems>();
+  @Output() public outputAddListItem = new EventEmitter<IListItems>();
 
   public focusAndAddItem(value: string) {
     if(value) {
@@ -35,7 +35,7 @@ export class InputAddItemComponent {
       const timestamp = currentDate.getTime();
       const id = `ID ${timestamp}`;
 
-      this.outputListItems.emit({
+      this.outputAddListItem.emit({
         id,
         checked: false,
         value,
