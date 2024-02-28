@@ -27,12 +27,18 @@
   <main class="container">
     @if(listItemsStage('pending').length) {
       <h2>Pendências</h2>
-      <app-input-list-items [inputListItems]="listItemsStage('pending')" />
+      <app-input-list-items
+        [inputListItems]="listItemsStage('pending')"
+        (outputUpdateItemCheckbox)="updateItemCheckbox($event)"
+      />
     }
 
     @if (listItemsStage('completed').length) {
       <h2>Concluídas</h2>
-      <app-input-list-items [inputListItems]="listItemsStage('completed')" />
+      <app-input-list-items
+        [inputListItems]="listItemsStage('completed')"
+        (outputUpdateItemCheckbox)="updateItemCheckbox($event)"
+      />
     }
   </main>
 
