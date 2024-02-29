@@ -1,5 +1,8 @@
 import { Component, signal } from '@angular/core';
 
+// SweetAlert2
+import Swal from 'sweetalert2';
+
 // Components
 import { InputAddItemComponent } from '../../components/input-add-item/input-add-item.component';
 import { InputListItemsComponent } from '../../components/input-list-items/input-list-items.component';
@@ -86,15 +89,37 @@ export class ListComponent {
   }
 
   public deleteItem(id: string) {
-    this.#setListItems.update((oldValue: IListItems[]) => {
-      return oldValue.filter((res) => res.id !== id);
-    });
 
-    return this.#updateLocalStorage();
+    Swal.fire({
+      title: "Tem certeza que você deseja apagar este item?",
+      text: "Você não poderá reverter o processo!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Sim, eu almejo deletar este item!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.#setListItems.update((oldValue: IListItems[]) => {
+          return oldValue.filter((res) => res.id !== id);
+        });
+
+        return this.#updateLocalStorage();
+      }
+    });
   }
 
   public deleteAllItems() {
-    localStorage.removeItem(ELOCALSTORAGE.MY_LIST);
-    return this.#setListItems.set(this.#parseItems());
+
+    Swal.fire({
+      title: "Tem certeza que você deseja apagar todos os itens?",
+      text: "Você não poderá reverter o processo!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Sim, delete este item!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        localStorage.removeItem(ELOCALSTORAGE.MY_LIST);
+        return this.#setListItems.set(this.#parseItems());
+      }
+    });
   }
 }
