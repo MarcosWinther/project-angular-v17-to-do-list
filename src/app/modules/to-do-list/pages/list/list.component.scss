@@ -7,11 +7,29 @@
   align-items: center;
   flex-direction: column;
 
-  div.container {
+  div.header,
+  div.container,
+  div.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  div.header {
+    width: 100%;
+    background: var(--primary);
+    position: absolute;
+    top: 0;
+
+    h1 {
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+  div.container {
+    position: relative;
 
     .btn-primary,
     app-input-add-item {
@@ -49,5 +67,19 @@
     align-items: center;
 
     border-top: 2px solid var(--black-010);
+    margin-bottom: 60px;
+  }
+
+  div.footer {
+    width: 100%;
+    background: var(--primary);
+    position: absolute;
+    bottom: 0;
+
+    p {
+      color: var(--white);
+      text-align: center;
+      padding: 0 10px;
+    }
   }
 }

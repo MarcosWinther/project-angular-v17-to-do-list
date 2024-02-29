@@ -1,27 +1,33 @@
-# ProjectAngularToDoList
+# 👨‍💻 Projeto Angular 'To Do List'
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+Projeto To Do List utilizando o framework Angular versão 17. Este projeto é proposto pelo expert Dener Troquatte no curso de Angular na plataforma UDEMY.
 
-## Development server
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.0.7.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## 💻 Tecnologias usadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<div style="display: inline_block">
+  <img alt="Angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white">
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+  <img alt="JavaScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+</div>
 
-## Build
+## 🖥 Preview:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Venha ver como ficou o projeto acessando [aqui nesse link do GithubPages](https://marcoswinther.github.io/project-portfolio-html-css-js/)
 
-## Running unit tests
+## ⚙ Execução do Projeto:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clonar Repósitório:** basta utilizar o comando `git clone` para clonar esse projeto e salvar na máquina. Depois execute `ng serve` no terminal do Angular no caminho do projeto para gerar um servidor de desenvolvimento. Navegue para `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
+2. **GitHubPages:** pode também acessar o projeto nesse [link](https://marcoswinther.github.io/game-detona-ralph-js-css-html/), que abrirá esse projeto no GitHubPages, sem precisar baixar o repositório na sua máquina.
 
-## Running end-to-end tests
+## 🤔 O que foi feito de diferente nesse projeto:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Colocado duas faixas: sendo uma como cabeçalho do projeto e a outra como rodapé com minhas redes sociais.
 
-## Further help
+## 📌 Créditos:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Assets**: Disponível no curso Angular v.17 do professor Denner Troquatte na plataforma Udemy.
