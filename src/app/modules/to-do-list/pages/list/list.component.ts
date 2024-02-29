@@ -45,7 +45,7 @@ export class ListComponent {
   }
 
   public updateItemCheckbox(newItem: { id: string, checked: boolean }) {
-    this.#setListItems.update( (oldValue: IListItems[]) => {
+    this.#setListItems.update((oldValue: IListItems[]) => {
       oldValue.filter(res => {
         if(res.id === newItem.id) {
           res.checked = newItem.checked;
@@ -56,6 +56,31 @@ export class ListComponent {
       })
 
       return oldValue;
+    });
+
+    return localStorage.setItem('@my-list', JSON.stringify(this.#setListItems()));
+  }
+
+  public updateItemText(newItem: { id: string, value: string }) {
+    this.#setListItems.update((oldValue: IListItems[]) => {
+      oldValue.filter(res => {
+        if(res.id === newItem.id) {
+          res.value = newItem.value;
+          return res;
+        }
+
+        return res;
+      })
+
+      return oldValue;
+    });
+
+    return localStorage.setItem('@my-list', JSON.stringify(this.#setListItems()));
+  }
+
+  public deleteItemText(id: string) {
+    this.#setListItems.update((oldValue: IListItems[]) => {
+      return oldValue.filter((res) => res.id !== id);
     });
 
     return localStorage.setItem('@my-list', JSON.stringify(this.#setListItems()));

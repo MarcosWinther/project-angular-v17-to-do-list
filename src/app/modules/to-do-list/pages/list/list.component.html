@@ -30,6 +30,8 @@
       <app-input-list-items
         [inputListItems]="listItemsStage('pending')"
         (outputUpdateItemCheckbox)="updateItemCheckbox($event)"
+        (outputUpdateItemText)="updateItemText($event)"
+        (outputDeleteItemText)="deleteItemText($event)"
       />
     }
 
@@ -38,6 +40,8 @@
       <app-input-list-items
         [inputListItems]="listItemsStage('completed')"
         (outputUpdateItemCheckbox)="updateItemCheckbox($event)"
+        (outputUpdateItemText)="updateItemText($event)"
+        (outputDeleteItemText)="deleteItemText($event)"
       />
     }
   </main>
