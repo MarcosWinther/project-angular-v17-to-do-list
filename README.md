@@ -26,7 +26,7 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## 🤔 O que foi feito de diferente nesse projeto:
 
-- Colocado duas faixas: sendo uma como cabeçalho do projeto e a outra como rodapé com minhas redes sociais.
+- Colocado duas faixas: sendo uma como cabeçalho do projeto e a outra como rodapé com as informações do projeto.
 
 ## 📌 Créditos:
 
