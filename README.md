@@ -17,12 +17,12 @@ Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli
 
 ## 🖥 Preview:
 
-- Venha ver como ficou o projeto acessando [aqui nesse link do GithubPages](https://marcoswinther.github.io/project-portfolio-html-css-js/)
+- Venha ver como ficou o projeto acessando [aqui nesse link do GithubPages](https://marcoswinther.github.io/project-angular-v17-to-do-list/)
 
 ## ⚙ Execução do Projeto:
 
 1. **Clonar Repósitório:** basta utilizar o comando `git clone` para clonar esse projeto e salvar na máquina. Depois execute `ng serve` no terminal do Angular no caminho do projeto para gerar um servidor de desenvolvimento. Navegue para `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
-2. **GitHubPages:** pode também acessar o projeto nesse [link](https://marcoswinther.github.io/game-detona-ralph-js-css-html/), que abrirá esse projeto no GitHubPages, sem precisar baixar o repositório na sua máquina.
+2. **GitHubPages:** pode também acessar o projeto nesse [link](https://marcoswinther.github.io/project-angular-v17-to-do-list/), que abrirá esse projeto no GitHubPages, sem precisar baixar o repositório na sua máquina.
 
 ## 🤔 O que foi feito de diferente nesse projeto:
 
